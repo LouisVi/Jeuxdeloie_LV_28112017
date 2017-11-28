@@ -227,11 +227,11 @@ BEGIN
 			writeln ('entrer votre premier des');
 			readln (des1);
 			writeln ('entrer votre deuxieme des');
-			readln (des2);
+			readln (des2);																				//demande la saisie des 2 des
 
 			if (des1 <= 6) and (des2 <= 6) then 
 			somme:= somme + (des1+des2)
-			else 
+			else 																							// verification de la validité des dés
 			somme := 0 ;
 			writeln('vous avez avancee de : ', somme); 
 
@@ -244,7 +244,7 @@ BEGIN
 			if (place=18) then
 				place:=(place+somme);
 
-			if (place=27) then
+			if (place=27) then																							//boucle 2 pour le mode de jeu 2
 				place:=(place+somme);
 
 			if (place=36) then
